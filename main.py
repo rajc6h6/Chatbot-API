@@ -7,12 +7,12 @@ def extract_text_from_pdf(pdf_path):
         text += page.get_text()
     return text
 
-extracted_text = extract_text_from_pdf("About the company.pdf")
+extracted_text = extract_text_from_pdf("About the Company.pdf")
 
 
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 
-text = extract_text_from_pdf("About the company.pdf")
+text = extract_text_from_pdf("About the Company.pdf")
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=500,
